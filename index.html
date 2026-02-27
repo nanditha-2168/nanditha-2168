@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Veg Cake Shop</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#ff4d6d;
+  --secondary:#fff0f5;
+  --dark:#2d2d2d;
+  --light:#ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#fafafa;
+  color:var(--dark);
+  line-height:1.6;
+}
+
+/* Header */
+header{
+  background:var(--light);
+  padding:15px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  position:sticky;
+  top:0;
+}
+
+header h2{
+  color:var(--primary);
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:var(--dark);
+  font-weight:500;
+}
+
+nav a:hover{
+  color:var(--primary);
+}
+
+/* Hero */
+.hero{
+  background:linear-gradient(rgba(255,77,109,0.85),rgba(255,77,109,0.85)),
+  url('https://images.unsplash.com/photo-1559620192-032c4bc4674e');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:120px 20px;
+}
+
+.hero h1{
+  font-size:2.5rem;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:1.1rem;
+  margin-bottom:25px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 28px;
+  background:white;
+  color:var(--primary);
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#ffe5ec;
+}
+
+/* Sections */
+section{
+  padding:70px 8%;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+  color:var(--primary);
+}
+
+/* Grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+/* Cards */
+.card{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card h3{
+  color:var(--primary);
+  margin-bottom:10px;
+}
+
+/* Contact */
+.contact{
+  background:var(--secondary);
+  text-align:center;
+}
+
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+  }
+  nav{
+    margin-top:10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>The Veg Cake Shop</h2>
+<nav>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Pure Veg Cakes Made With Love</h1>
+<p>100% Eggless | Freshly Baked | Hygienic & Affordable</p>
+<a href="#contact" class="btn">Order Now</a>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Us</h2>
+<div class="grid">
+<div class="card">
+<h3>100% Pure Veg</h3>
+<p>We prepare completely eggless cakes using premium vegetarian ingredients.</p>
+</div>
+<div class="card">
+<h3>Quality & Hygiene</h3>
+<p>Every product is made in a clean kitchen following strict hygiene standards.</p>
+</div>
+<div class="card">
+<h3>Wide Variety</h3>
+<p>Over 50+ flavours and custom designs available for every celebration.</p>
+</div>
+</div>
+</section>
+
+<section id="products">
+<h2 class="section-title">Our Products</h2>
+<div class="grid">
+<div class="card">
+<h3>Flavoured Cakes</h3>
+<p>Chocolate, Vanilla, Butterscotch, Red Velvet, Black Forest, Pineapple. Available in 500g, 1kg & custom sizes.</p>
+</div>
+<div class="card">
+<h3>Brownies</h3>
+<p>Rich chocolate, walnut & choco-chip brownies — soft and fudgy.</p>
+</div>
+<div class="card">
+<h3>Donuts</h3>
+<p>Chocolate glaze, strawberry filled & sprinkle donuts for sweet cravings.</p>
+</div>
+<div class="card">
+<h3>Cookies</h3>
+<p>Butter cookies, chocolate chip cookies & dry fruit cookies baked fresh daily.</p>
+</div>
+<div class="card">
+<h3>Custom Cakes</h3>
+<p>Theme cakes, photo cakes & designer cakes for birthdays, weddings & events.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="section-title">Contact Us</h2>
+<p>📞 Call / WhatsApp: +91-XXXXXXXXXX</p>
+<p>📍 Your City, India</p>
+<p>🕒 Open Daily: 9 AM – 9 PM</p>
+<br>
+<a href="tel:+91XXXXXXXXXX" class="btn">Call Now</a>
+</section>
+
+<footer>
+<p>© 2026 The Veg Cake Shop | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
